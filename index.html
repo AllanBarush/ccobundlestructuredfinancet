@@ -58,7 +58,16 @@ ol.temas .tg{display:block;font-family:'Lora',Georgia,serif;font-style:italic;co
 .abs p{font-size:16.5px;margin-top:18px;color:var(--ink)}.abs p b{color:var(--title)}
 .hl{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:30px}.hl .h{border:1px solid var(--rule);background:var(--card);padding:18px 20px}.hl .h b{font-family:'Poppins',Arial,sans-serif;color:var(--acc);font-weight:700;font-size:13px;display:block;margin-bottom:6px}.hl .h span{font-size:14.5px;color:var(--ink)}@media(max-width:700px){.hl{grid-template-columns:1fr}}
 ul.dir{list-style:none;margin-top:24px}ul.dir li{padding:10px 0 10px 26px;position:relative;font-size:15.5px;border-bottom:1px solid var(--rule)}ul.dir li::before{content:"";position:absolute;left:2px;top:19px;width:8px;height:8px;background:var(--acc);border-radius:50%}
-</style></head><body>
+</style><style id="upd-option-sep26">
+/* El menu desplegable nativo lo pinta el sistema operativo con fondo blanco:
+   hay que fijar el color del texto o las opciones quedan invisibles. */
+#rm-enroll select option,#rm-enroll option{color:#111 !important;background-color:#fff !important}
+#rm-enroll select option:checked,#rm-enroll option:checked{color:#111 !important;background-color:#e8e8e8 !important}
+@media (prefers-color-scheme:dark){
+  #rm-enroll select option,#rm-enroll option{color:#111 !important;background-color:#fff !important}
+}
+</style>
+</head><body>
 <header class="hero">
  <div class="serie">RiskMathics Financial Institute · Programa Ejecutivo de Crédito</div>
  <h1>Finanzas Estructuradas, Clima y Tecnología del Crédito</h1>
